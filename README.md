@@ -1,4 +1,4 @@
-# Hi there, I'm Allan Solomon 👋
+# Hi there, I'm Allan Solomon 
 
 ### IT Enthusiast based in the Philippines 🇵🇭
 [![Profile Views](https://komarev.com/ghpvc/?username=immortal1sm&label=Profile%20Views&color=0e75b6&style=flat-square)](https://github.com/immortal1sm)
