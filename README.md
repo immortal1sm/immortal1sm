@@ -73,9 +73,7 @@ A full-stack movie database application built with PHP and Laravel.
 ## Connect With Me 🌐
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/immortal1sm)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/allansolomon)
 [![X / Twitter](https://img.shields.io/badge/X/𝕏-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/im_immortalism)
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:solomonallan27@gmail.com)
 
 ---
 
