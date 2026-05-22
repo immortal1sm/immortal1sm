@@ -66,7 +66,7 @@ Self-hosted Discord bot that lets trusted users manage game servers with slash c
 
 ### Laravel Movie App
 A full-stack movie database application built with PHP and Laravel.
-🔗 [View Project](https://github.com/immortal1sm/laravel_movie)
+🔗 [View Project](https://github.com/immortal1sm/kflix-laravel)
 
 ---
 
