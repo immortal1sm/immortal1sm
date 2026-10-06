@@ -56,11 +56,11 @@ An Arduino drives a 128×64 SH1106 over USB serial while a Python host reads CPU
 
 ### <a href="https://github.com/immortal1sm/water-monitoring-system">Water Level Monitoring System</a> 💧
 
-**IoT water level monitor for rice fields.**
+**IoT water level monitor for rice fields — ESP32 mesh.**
 
-A waterproof JSN-SR04T ultrasonic sensor feeds an Arduino that reports readings over serial to a PHP dashboard with live visualization, history, and threshold-based alerts. Includes a phased procurement doc (bench test → power → field deploy), client documentation, and a SIM800L GSM path for SMS alerts.
+Waterproof JSN-SR04T ultrasonic sensors on ESP32 nodes measure every 30s and report over **ESP-NOW** to a gateway node, which batches readings and uploads them to the dashboard over **WiFi via a REST GET** request. The PHP/MySQL dashboard does live visualization, history, and threshold-based alerts, with over-the-air firmware updates on the nodes.
 
-`Arduino` `JSN-SR04T` `PHP` `Python` `MySQL`
+`ESP32` `ESP-NOW` `JSN-SR04T` `WiFi` `PHP` `MySQL`
 
 [![stars](https://img.shields.io/github/stars/immortal1sm/water-monitoring-system?style=for-the-badge&logo=github&color=7C9CF5)](https://github.com/immortal1sm/water-monitoring-system)
 
@@ -97,40 +97,62 @@ Trusted users start, stop, restart, and check status on Docker-hosted game serve
 ### Languages
 
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Dart](https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-### Web
+### Frontend & Mobile
 
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![React Native](https://img.shields.io/badge/-React%20Native-20232A?style=for-the-badge&logo=react-native&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+
+### Backend & Frameworks
+
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 </td><td valign="top" width="50%">
 
-### DevOps & Systems
+### DevOps & Infrastructure
 
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Proxmox](https://img.shields.io/badge/-Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
-![Arch Linux](https://img.shields.io/badge/-Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/-Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Nginx](https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+### Databases
+
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Qdrant](https://img.shields.io/badge/-Qdrant-DC244C?style=for-the-badge)
 
 ### Embedded & IoT
 
 ![Arduino](https://img.shields.io/badge/-Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![ESP32](https://img.shields.io/badge/-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![C/C++ Embedded](https://img.shields.io/badge/-Embedded-5C2D91?style=for-the-badge)
+![Embedded C/C%2B%2B](https://img.shields.io/badge/-Embedded%20C%2FC%2B%2B-5C2D91?style=for-the-badge&logo=c&logoColor=white)
 
-### Data
+### AI & Automation
 
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Qdrant](https://img.shields.io/badge/-Qdrant-DC244C?style=for-the-badge)
+![Ollama](https://img.shields.io/badge/-Ollama-000000?style=for-the-badge)
+![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+![RAG](https://img.shields.io/badge/-RAG-1C3C3C?style=for-the-badge)
 
 </td></tr>
 </table>
@@ -142,11 +164,11 @@ Trusted users start, stop, restart, and check status on Docker-hosted game serve
 | Area | Details |
 | :-- | :-- |
 | **Systems Programming** | Rust daemons — USB HID, D-Bus/MPRIS, IPC sockets; C/C++ firmware |
-| **Embedded & IoT** | Arduino (serial/I2C), SH1106 OLEDs, ESP32, JSN-SR04T ultrasonic sensors, GSM/SIM800L alerting |
+| **Embedded & IoT** | ESP32 (WiFi, ESP-NOW, OTA), Arduino (serial/I2C), SH1106 OLEDs, JSN-SR04T ultrasonic sensors |
 | **Linux & Sysadmin** | Arch/Debian/Ubuntu Server, systemd, SSH, user & system administration, cron |
-| **DevOps & Self-Hosting** | Proxmox VE (LXC/VMs), Docker, Nginx reverse proxy, SSL/TLS, AdGuard Home DNS, Bash scripting |
-| **Web** | PHP/Laravel, vanilla JS, REST APIs, MySQL |
-| **Data & AI** | Vector search with Qdrant, retrieval pipelines, embedding models |
+| **DevOps & Self-Hosting** | Proxmox VE (LXC/VMs), Docker, Nginx reverse proxy, SSL/TLS, Cloudflare Tunnel, AdGuard Home DNS, Terraform, Bash scripting |
+| **Full-Stack Web** | React, Node.js/Express, PHP/Laravel, Firebase, REST APIs, MySQL/MongoDB |
+| **AI & Automation** | Local LLMs via Ollama, RAG pipelines, vector search with Qdrant, n8n workflows |
 
 ---
 
