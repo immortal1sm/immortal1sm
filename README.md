@@ -33,7 +33,7 @@ I build things end-to-end — from **Rust daemons** and **embedded firmware** th
 
 **Linux OLED daemon for SteelSeries Apex Pro keyboards** — on Linux, without SteelSeries GG.
 
-Eight rotating providers on a 128×64 panel: MPRIS2 now-playing (event-driven, jumps to front on any track change), sysinfo bars, weather + 5-day forecast, animated icons, synchronized lyrics, clock, and your own images with Floyd–Steinberg dithering so multi-tone art survives the 1-bit screen. Per-provider dwell times, event-driven switching, GUI, and engine split into separate crates.
+Eight rotating providers on a 128×40 panel: MPRIS2 now-playing (event-driven, jumps to front on any track change), sysinfo bars, weather + 5-day forecast, animated icons, synchronized lyrics, clock, and your own images with Floyd–Steinberg dithering so multi-tone art survives the 1-bit screen. Per-provider dwell times, event-driven switching, GUI, and engine split into separate crates.
 
 `Rust` `USB HID` `D-Bus/MPRIS` `systemd`
 
